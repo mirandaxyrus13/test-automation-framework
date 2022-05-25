@@ -39,20 +39,20 @@
                     <systemProperties>
                         <property>
                             <name>environment</name>
-                            <!--<value>${environment}</value>-->
-                            <value>test</value>
+                            <value>${environment}</value>
+<!--                            <value>test</value>-->
                         </property>
                         <property>
                             <name>browserInstance</name>
-                            <!--<value>${browserInstance}</value>-->
-                            <value>chrome</value>
+                            <value>${browserInstance}</value>
+<!--                            <value>chrome</value>-->
                         </property>
                     </systemProperties>
 
 
                     <suiteXmlFiles>
-                        <!-- <suiteXmlFile>TestSuite/${suiteXmlFile}</suiteXmlFile> -->
-                        <suiteXmlFile>TestSuite/SmokeTesting.xml</suiteXmlFile>
+                         <suiteXmlFile>TestSuite/${suiteXmlFile}</suiteXmlFile>
+<!--                        <suiteXmlFile>TestSuite/SmokeTesting.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
