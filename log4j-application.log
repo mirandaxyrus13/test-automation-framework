@@ -3342,3 +3342,49 @@ freemarker.core.InvalidReferenceException: [... Exception message was already pr
 2022-05-25 21:47:00 - [Log:] chrome instance closed.
 2022-05-25 21:47:00 - [INFO] Browser instance closed
 2022-05-25 21:47:00 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2022-06-27 23:45:46 - [INFO] Setting the environment to test
+2022-06-27 23:45:48 - [PASSED] Browser Initialized
+2022-06-27 23:45:48 - [INFO] Accessing https://www.saucedemo.com/
+2022-06-27 23:45:50 - [Story Name] SwagLabs Sauce Demo
+2022-06-27 23:45:50 - [Test Script Name] Purchase Swag Labs products
+2022-06-27 23:45:50 - [Test Script Description] User is purchases Swag Labs products
+2022-06-27 23:45:52 - [PASSED] Username TextBox is populated with 'standard_user'
+2022-06-27 23:45:55 - [PASSED] Password TextBox is populated with '******'
+2022-06-27 23:45:57 - [PASSED] Sign In Button is clicked
+2022-06-27 23:45:59 - [PASSED] Swag Labs Logo is displayed
+2022-06-27 23:46:02 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2022-06-27 23:46:04 - [PASSED] Cart Button is clicked
+2022-06-27 23:46:10 - [Log:] chrome instance closed.
+2022-06-27 23:46:10 - [INFO] Browser instance closed
+2022-06-27 23:46:10 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2022-06-27 23:49:37 - [INFO] Setting the environment to test
+2022-06-27 23:49:39 - [PASSED] Browser Initialized
+2022-06-27 23:49:39 - [INFO] Accessing https://www.saucedemo.com/
+2022-06-27 23:49:39 - [Story Name] SwagLabs Sauce Demo
+2022-06-27 23:49:39 - [Test Script Name] Purchase Swag Labs products
+2022-06-27 23:49:39 - [Test Script Description] User is purchases Swag Labs products
+2022-06-27 23:49:42 - [PASSED] Username TextBox is populated with 'standard_user'
+2022-06-27 23:49:44 - [PASSED] Password TextBox is populated with '******'
+2022-06-27 23:49:47 - [PASSED] Sign In Button is clicked
+2022-06-27 23:49:49 - [PASSED] Swag Labs Logo is displayed
+2022-06-27 23:49:52 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2022-06-27 23:49:54 - [PASSED] Cart Button is clicked
+2022-06-27 23:50:00 - [Log:] chrome instance closed.
+2022-06-27 23:50:00 - [INFO] Browser instance closed
+2022-06-27 23:50:00 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2022-07-24 22:40:06 - [INFO] Setting the environment to test
+2022-07-24 22:42:38 - [INFO] Setting the environment to test
+2022-07-24 22:42:40 - [PASSED] Browser Initialized
+2022-07-24 22:42:40 - [INFO] Accessing https://www.saucedemo.com/
+2022-07-24 22:42:42 - [Story Name] SwagLabs Sauce Demo
+2022-07-24 22:42:42 - [Test Script Name] Purchase Swag Labs products
+2022-07-24 22:42:42 - [Test Script Description] User is purchases Swag Labs products
+2022-07-24 22:42:44 - [PASSED] Username TextBox is populated with 'standard_user'
+2022-07-24 22:42:47 - [PASSED] Password TextBox is populated with '******'
+2022-07-24 22:42:49 - [PASSED] Sign In Button is clicked
+2022-07-24 22:42:51 - [PASSED] Swag Labs Logo is displayed
+2022-07-24 22:42:54 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2022-07-24 22:42:56 - [PASSED] Cart Button is clicked
+2022-07-24 22:43:02 - [Log:] chrome instance closed.
+2022-07-24 22:43:02 - [INFO] Browser instance closed
+2022-07-24 22:43:02 - [INFO] Test Execution of SmokeTesting::TC0003 completed
