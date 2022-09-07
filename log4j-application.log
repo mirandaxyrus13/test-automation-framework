@@ -3388,3 +3388,18 @@ freemarker.core.InvalidReferenceException: [... Exception message was already pr
 2022-07-24 22:43:02 - [Log:] chrome instance closed.
 2022-07-24 22:43:02 - [INFO] Browser instance closed
 2022-07-24 22:43:02 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2022-09-07 21:18:02 - [INFO] Setting the environment to test
+2022-09-07 21:18:03 - [PASSED] Browser Initialized
+2022-09-07 21:18:03 - [INFO] Accessing https://www.saucedemo.com/
+2022-09-07 21:18:32 - [Story Name] SwagLabs Sauce Demo
+2022-09-07 21:18:32 - [Test Script Name] Purchase Swag Labs products
+2022-09-07 21:18:32 - [Test Script Description] User is purchases Swag Labs products
+2022-09-07 21:18:35 - [PASSED] Username TextBox is populated with 'standard_user'
+2022-09-07 21:18:37 - [PASSED] Password TextBox is populated with '******'
+2022-09-07 21:18:39 - [PASSED] Sign In Button is clicked
+2022-09-07 21:18:42 - [PASSED] Swag Labs Logo is displayed
+2022-09-07 21:18:44 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2022-09-07 21:18:47 - [PASSED] Cart Button is clicked
+2022-09-07 21:18:52 - [Log:] chrome instance closed.
+2022-09-07 21:18:52 - [INFO] Browser instance closed
+2022-09-07 21:18:52 - [INFO] Test Execution of SmokeTesting::TC0003 completed
