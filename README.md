@@ -17,6 +17,67 @@ Frameworks applied are:
 - Library Architecture Testing Framework
 - Data Driven Testing Framework
 
+### Design Pattern
+For the Hybrid Testing Framework, Page Objects Model pattern is used.
+
+Page Object Model also known as POM is the most popular structural design pattern in web/mobile automation.
+
+When working in an Agile environment, the test framework should always be ready for changes in the software and 
+ultimately in the automation code base. When any requirement is changed/deleted/added, the automation code
+is also necessary for update as well to keep it up and running. 
+
+In the Hybrid Testing Framework:
+ - a class represents a page
+ - a subclass represents a part/section of a certain page
+ - a private static element represents a web element/component of a page
+   - technically speaking, it represents an element of a subclass/section
+ - an action is created and represents on how that certain element of certain elements should be interacted with
+   - e.g. enter text into, click on, select, validation, etc...
+
+Here's the basic structure of the Page Object Model pattern applied in this framework
+
+```Java
+//Represents a page
+public class HomePage {
+    
+    //Represents a part/section of this page
+    public static class Header{
+        //represents a web element/component of a page
+        private static Element logoSwagLabs = new Element("Swag Labs Logo", By.xpath("//div[@class='app_logo']"));
+        //represents a web element/component of a page
+        private static Button buttonCart = new Button("Cart", By.xpath("//a[@class='shopping_cart_link']"));
+        
+        //represents on how that certain element of certain elements should be interacted with
+        public static void verifySwagLabsLogo() {
+            logoSwagLabs.verifyDisplayed();
+
+        }
+        //represents on how that certain element of certain elements should be interacted with
+        public static void clickCart() {
+            buttonCart.click();
+        }
+    }
+
+    //Represents a part/section of this page
+    public static class InventoryItems{
+        
+        //represents a web element/component of a page
+        private static ListElement listInventoryProducts = new ListElement("Inventory Products", By.xpath("//div[@class='inventory_item']//div[@class='inventory_item_name']"));
+
+        //represents on how that certain element of certain elements should be interacted with
+        public static void clickProduct(String text) {
+            listInventoryProducts.clickByText(text);
+        }
+
+        //represents on how that certain element of certain elements should be interacted with
+        public static void clickAddToCart(String text) {
+            Button buttonAddToCart = new Button(text + " Add to Cart", By.xpath("//div[@id]//div[text()='"+text+"']//ancestor::div[@class='inventory_item_description']//button"));
+            buttonAddToCart.click();
+        }
+    }
+}
+```
+
 
 ### Framework Structure
 

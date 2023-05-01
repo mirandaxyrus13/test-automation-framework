@@ -1,13 +1,11 @@
 package com.test.automation.framework.pageobjects.saucedemo;
 
-import org.openqa.selenium.By;
-
+import com.test.automation.framework.webelements.Button;
 import com.test.automation.framework.webelements.Element;
 import com.test.automation.framework.webelements.ListElement;
-import com.test.automation.framework.webelements.Button;
+import org.openqa.selenium.By;
 
 public class HomePage {
-
 
 	public static class Header{
 		
@@ -22,7 +20,6 @@ public class HomePage {
 		public static void clickCart() {
 			buttonCart.click();
 		}
-		
 	}
 	
 	public static class InventoryItems{
@@ -38,9 +35,5 @@ public class HomePage {
 			Button buttonAddToCart = new Button(text + " Add to Cart", By.xpath("//div[@id]//div[text()='"+text+"']//ancestor::div[@class='inventory_item_description']//button"));
 			buttonAddToCart.click();
 		}
-
-
-		
-		
 	}
 }

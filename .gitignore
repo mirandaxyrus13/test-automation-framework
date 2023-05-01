@@ -2,3 +2,4 @@ target/
 test-output/
 .idea/
 .settings/
+*.log

@@ -1,15 +1,14 @@
 package com.test.automation.framework.saucedemo;
 
-import org.testng.annotations.Test;
-
+import com.test.automation.framework.pageobjects.saucedemo.HomePage;
+import com.test.automation.framework.pageobjects.saucedemo.LoginPage;
 import com.test.automation.framework.core.Browser;
 import com.test.automation.framework.core.Log;
 import com.test.automation.framework.dataobjects.saucedemo.SauceDemo_Data;
-import com.test.automation.framework.pageobjects.saucedemo.LoginPage;
-import com.test.automation.framework.pageobjects.saucedemo.HomePage;
+import org.testng.annotations.Test;
 
 
-public class SmokeTesting extends Browser{
+public class SmokeTesting extends Browser {
 	
 	@Test
 	public static void TC0003() throws Exception{
@@ -22,9 +21,7 @@ public class SmokeTesting extends Browser{
 		HomePage.Header.verifySwagLabsLogo();
 		HomePage.InventoryItems.clickAddToCart(SauceDemo_Data.TestDataTC0001.getProduct());
 		HomePage.Header.clickCart();
-
 		Thread.sleep(5000);
-		
 	}
 	
 }

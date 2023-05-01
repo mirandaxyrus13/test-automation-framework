@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.test.automation.framework</groupId>
     <artifactId>test-automation-framework</artifactId>
     <name>test-automation-framework</name>
@@ -32,7 +31,7 @@
                     <parallelOptimized>true</parallelOptimized>
                     <perCoreThreadCount>true</perCoreThreadCount>
                     <reuseForks>false</reuseForks>
-                    <forkCount>2.5C</forkCount>
+                    <forkCount>0</forkCount>
                     <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
                     <testFailureIgnore>false</testFailureIgnore>
@@ -40,19 +39,19 @@
                         <property>
                             <name>environment</name>
                             <value>${environment}</value>
-<!--                            <value>test</value>-->
+                            <!-- <value>test</value>-->
                         </property>
                         <property>
                             <name>browserInstance</name>
                             <value>${browserInstance}</value>
-<!--                            <value>chrome</value>-->
+                            <!--  <value>chrome</value>-->
                         </property>
                     </systemProperties>
 
 
                     <suiteXmlFiles>
-                         <suiteXmlFile>TestSuite/${suiteXmlFile}</suiteXmlFile>
-<!--                        <suiteXmlFile>TestSuite/SmokeTesting.xml</suiteXmlFile>-->
+                        <suiteXmlFile>TestSuite/${suiteXmlFile}</suiteXmlFile>
+                        <!-- <suiteXmlFile>TestSuite/SmokeTesting.xml</suiteXmlFile>-->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
@@ -62,36 +61,37 @@
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>4.8.3</version>
         </dependency>
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
-            <version>4.1.2</version>
+            <version>5.2.3</version>
         </dependency>
 
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
-            <version>4.1.2</version>
+            <version>5.2.3</version>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.11</version>
+            <version>4.13.2</version>
         </dependency>
 
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>2.11.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.7.1</version>
         </dependency>
 
         <dependency>
@@ -103,7 +103,7 @@
         <dependency>
             <groupId>com.aventstack</groupId>
             <artifactId>extentreports</artifactId>
-            <version>5.0.8</version>
+            <version>4.1.7</version>
         </dependency>
 
         <dependency>

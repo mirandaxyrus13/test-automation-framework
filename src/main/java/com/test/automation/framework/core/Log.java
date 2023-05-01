@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.testng.Reporter;
 import org.junit.Assert;
 
+import java.io.IOException;
+
 public class Log extends Browser{
     private static Logger consoleLog = Logger.getLogger(Log.class.getName());
 
@@ -13,7 +15,7 @@ public class Log extends Browser{
         test.info("[Log:] " + name);
     }
 
-    public static void setScreenshot(String name) {
+    public static void setScreenshot(String name) throws IOException {
         Reporter.log("[Screenshot:] " + name);
         consoleLog.info("[Screenshot:] " + name);
         test.info("Snapshot below: " + test.addScreenCaptureFromPath(Screenshot.path, name));

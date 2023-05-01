@@ -1,26 +1,13 @@
 package com.test.automation.framework.core;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Properties;
-import java.util.Set;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
-import org.openqa.selenium.WebElement;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
@@ -28,10 +15,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
-
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Properties;
 
 public class Browser {
 
@@ -40,11 +32,12 @@ public class Browser {
     private static Properties properties;
     private static String environment;
     private static String url;
-    public static WebDriver driver;
     public ExtentReports extent;
     public ExtentSparkReporter spark;
     public static ExtentTest test;
+    public static WebDriver driver;
     private static Integer searchLoop = 1;
+
     private static String downloadFilepath = System.getProperty("user.dir").replace("\\", "/")
             + "/src/main/resources/downloads/";
     private static String extentSparkConfigPath = System.getProperty("user.dir").replace("\\", "/")
@@ -52,107 +45,37 @@ public class Browser {
     private static String extentSparkReportPath = System.getProperty("user.dir").replace("\\", "/")
             + "/target/extent-reports/SauceDemo_ " + DateUtilities.getCurrentDate() + "_" + DateUtilities.getTimeStamp()
             + "_" + "ExtentSparkReports.html";
+
     private static ArrayList<String> tabs;
     private static int tabCounter = 0;
 
+    public static Duration setWaitDurationTime(){
+        Duration waitDuration = Duration.ofSeconds(10);
+        return waitDuration;
+    }
     public static void delay(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
         } catch (InterruptedException e) {
+
         }
     }
 
-    public static WebElement findElement(By by) throws WebDriverException {
-        WebElement element = null;
-        int i = 0;
-        int attempts = 0;
-        waitForBrowserToLoadCompletely(getDriver());
-        while (i != searchLoop && element == null) {
-            i += 1;
-            try {
-                element = new WebDriverWait(getDriver(), 10).ignoring(StaleElementReferenceException.class)
-                        .until(ExpectedConditions.presenceOfElementLocated(by));
-            } catch (Exception e) {
-                element = null;
-            }
-        }
-        if (element != null) {
-            try {
-                while (attempts < 2) {
-                    try {
-                        Actions actions = new Actions(getDriver());
-                        actions.moveToElement(element);
-                        actions.perform();
-                    } catch (StaleElementReferenceException e) {
-                    }
-                    attempts++;
-                }
-            } catch (Exception e) {
-            }
-        }
-        return element;
+    public static WebDriver getDriver() {
+        return driver;
     }
 
-    public static List<WebElement> findElements(By by) throws WebDriverException {
-        List<WebElement> elements = null;
-        int i = 0;
-        int attempts = 0;
-        while (i != searchLoop && elements.size() == 0) {
-            i += 1;
-            try {
-                elements = new WebDriverWait(getDriver(), 5).ignoring(StaleElementReferenceException.class)
-                        .until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
-            } catch (Exception e) {
-                elements = null;
-            }
-        }
-        if (elements != null) {
-            try {
-                while (attempts < 2) {
-                    try {
-                        Actions actions = new Actions(getDriver());
-                        actions.moveToElement(elements.get(0));
-                        actions.perform();
-                    } catch (StaleElementReferenceException e) {
-                    }
-                    attempts++;
-                }
-            } catch (Exception e) {
-            }
-        }
-        return elements;
+    private static void getBrowser() throws Exception {
+        browser = System.getProperty("browserInstance").toString();
     }
 
-    public static List<WebElement> findElements(By parentBy, By childBy) throws WebDriverException {
-        WebElement element = null;
-        List<WebElement> elements = null;
-        int i = 0;
-        int attempts = 0;
-        while (i != searchLoop && elements.size() == 0) {
-            i += 1;
-            try {
-                element = new WebDriverWait(getDriver(), 5).ignoring(StaleElementReferenceException.class)
-                        .until(ExpectedConditions.presenceOfElementLocated(parentBy));
-                elements = element.findElements(childBy);
-            } catch (Exception e) {
-                elements = null;
-            }
-        }
-        if (elements != null) {
-            try {
-                while (attempts < 2) {
-                    try {
-                        Actions actions = new Actions(getDriver());
-                        actions.moveToElement(elements.get(0));
-                        actions.perform();
-                    } catch (StaleElementReferenceException e) {
-                    }
-                    attempts++;
-                }
-            } catch (Exception e) {
-            }
-        }
-        return elements;
+    public static String getBrowserProperty() throws Exception {
+        fileInputStream = new FileInputStream(
+                System.getProperty("user.dir").replace("\\", "/") + "/src/main/resources/AppConfig/config.properties");
+        properties = new Properties();
+        properties.load(fileInputStream);
+        String browserValue = properties.getProperty("browser").toString();
+        return browserValue;
     }
 
     public static void waitForBrowserToLoadCompletely(WebDriver driver) {
@@ -196,6 +119,99 @@ public class Browser {
         }
     }
 
+    public static WebElement findElement(By by) throws WebDriverException {
+        WebElement element = null;
+        int i = 0;
+        int attempts = 0;
+        waitForBrowserToLoadCompletely(getDriver());
+        while (i != searchLoop && element == null) {
+            i += 1;
+            try {
+                element = new WebDriverWait(getDriver(), setWaitDurationTime()).ignoring(StaleElementReferenceException.class)
+                        .until(ExpectedConditions.presenceOfElementLocated(by));
+            } catch (Exception e) {
+                element = null;
+            }
+        }
+        if (element != null) {
+            try {
+                while (attempts < 2) {
+                    try {
+                        Actions actions = new Actions(getDriver());
+                        actions.moveToElement(element);
+                        actions.perform();
+                    } catch (StaleElementReferenceException e) {
+                    }
+                    attempts++;
+                }
+            } catch (Exception e) {
+            }
+        }
+        return element;
+    }
+
+    public static List<WebElement> findElements(By by) throws WebDriverException {
+        List<WebElement> elements = null;
+        int i = 0;
+        int attempts = 0;
+        while (i != searchLoop && elements.size() == 0) {
+            i += 1;
+            try {
+                elements = new WebDriverWait(getDriver(), setWaitDurationTime()).ignoring(StaleElementReferenceException.class)
+                        .until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
+            } catch (Exception e) {
+                elements = null;
+            }
+        }
+        if (elements != null) {
+            try {
+                while (attempts < 2) {
+                    try {
+                        Actions actions = new Actions(getDriver());
+                        actions.moveToElement(elements.get(0));
+                        actions.perform();
+                    } catch (StaleElementReferenceException e) {
+                    }
+                    attempts++;
+                }
+            } catch (Exception e) {
+            }
+        }
+        return elements;
+    }
+
+    public static List<WebElement> findElements(By parentBy, By childBy) throws WebDriverException {
+        WebElement element = null;
+        List<WebElement> elements = null;
+        int i = 0;
+        int attempts = 0;
+        while (i != searchLoop && elements.size() == 0) {
+            i += 1;
+            try {
+                element = new WebDriverWait(getDriver(), setWaitDurationTime()).ignoring(StaleElementReferenceException.class)
+                        .until(ExpectedConditions.presenceOfElementLocated(parentBy));
+                elements = element.findElements(childBy);
+            } catch (Exception e) {
+                elements = null;
+            }
+        }
+        if (elements != null) {
+            try {
+                while (attempts < 2) {
+                    try {
+                        Actions actions = new Actions(getDriver());
+                        actions.moveToElement(elements.get(0));
+                        actions.perform();
+                    } catch (StaleElementReferenceException e) {
+                    }
+                    attempts++;
+                }
+            } catch (Exception e) {
+            }
+        }
+        return elements;
+    }
+
     public static int getTabCount() {
         return new ArrayList<String>(getDriver().getWindowHandles()).size();
     }
@@ -233,47 +249,39 @@ public class Browser {
             String driverType = null;
             if (OSChecker.isWindows()) {
                 driverType = "chromedriver.exe";
+                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/windows/" + driverType);
             } else if (OSChecker.isMac()) {
                 driverType = "chromedriver_mac";
+                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/mac/" + driverType);
             }
-            System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/" + driverType);
-
             HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
             chromePrefs.put("profile.default_content_settings.popups", 0);
             chromePrefs.put("download.default_directory", downloadFilepath);
-
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.setExperimentalOption("prefs", chromePrefs);
-
             fileInputStream = new FileInputStream(System.getProperty("user.dir").replace("\\", "/")
                     + "/src/main/resources/AppConfig/config.properties");
             properties = new Properties();
             properties.load(fileInputStream);
-
             String chromeProfile = properties.getProperty("chrome_profile").toString();
             if (chromeProfile.equals("true")) {
                 chromeOptions.addArguments("--user-data-dir=C:\\Browser");
                 chromeOptions.addArguments("--profile-directory=Profile 5");
             } else {
-            }
 
+            }
             chromeOptions.addArguments("start-maximized");
             chromeOptions.addArguments("mute-audio");
             chromeOptions.addArguments("disable-extensions");
             // chromeOptions.addArguments("headless");
             chromeOptions.addArguments("disable-gpu");
             // chromeOptions.addArguments("window-size=1280x1024");
-
-            DesiredCapabilities chromeCapabilities = DesiredCapabilities.chrome();
-            chromeCapabilities.setJavascriptEnabled(true);
-            chromeCapabilities.setAcceptInsecureCerts(true);
-            chromeCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
-            chromeCapabilities.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
-
-            driver = new ChromeDriver(chromeCapabilities);
-
+            chromeOptions.setAcceptInsecureCerts(true);
+            chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
+            chromeOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
+            chromeOptions.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
+            driver = new ChromeDriver(chromeOptions);
             Log.testStep("PASSED", "Browser Initialized", "Browser Initialized");
-
         } else if (browser.equalsIgnoreCase("firefox")) {
 
         } else if (browser.equalsIgnoreCase("edge")) {
@@ -281,39 +289,17 @@ public class Browser {
         }
     }
 
-    public static WebDriver getDriver() {
-        return driver;
-    }
-
-    private static void getBrowser() throws Exception {
-        browser = System.getProperty("browserInstance").toString();
-    }
-
-    public static String getBrowserProperty() throws Exception {
-        fileInputStream = new FileInputStream(
-                System.getProperty("user.dir").replace("\\", "/") + "/src/main/resources/AppConfig/config.properties");
-        properties = new Properties();
-        properties.load(fileInputStream);
-        String browserValue = properties.getProperty("browser").toString();
-        return browserValue;
-
-    }
-
     private static void setEnvironment() throws Exception {
         environment = System.getProperty("environment").toString();
-
         if (environment.equals("dev")) {
-            // TODO set excel sheet name based on environment
             DataAccessLayer.setSheetName(environment);
             Log.testStep("INFO", "Setting the environment to " + environment,
                     "Setting the environment to " + environment);
         } else if (environment.equals("test")) {
-            // TODO set excel sheet name based on environment
             DataAccessLayer.setSheetName(environment);
             Log.testStep("INFO", "Setting the environment to " + environment,
                     "Setting the environment to " + environment);
         }
-
     }
 
     private static void openApplication() throws Exception {
@@ -321,7 +307,6 @@ public class Browser {
                 System.getProperty("user.dir").replace("\\", "/") + "/src/main/resources/AppConfig/config.properties");
         properties = new Properties();
         properties.load(fileInputStream);
-
         if (environment.equals("dev")) {
             url = properties.getProperty("dev_url").toString();
             Log.testStep("INFO", "Accessing " + url, "Accessing " + url);
@@ -330,7 +315,6 @@ public class Browser {
             Log.testStep("INFO", "Accessing " + url, "Accessing " + url);
         }
         getDriver().get(url);
-
     }
 
     @BeforeSuite(alwaysRun = true)
@@ -340,7 +324,6 @@ public class Browser {
         final File CONF = new File(extentSparkConfigPath);
         spark.loadXMLConfig(CONF);
         extent.attachReporter(spark);
-
     }
 
     @BeforeMethod(alwaysRun = true)
@@ -362,12 +345,10 @@ public class Browser {
             Screenshot.capture("Passed_" + result.getName() + "_");
             test.addScreenCaptureFromPath(Screenshot.getpath() + Screenshot.getname());
         }
-
         if (getDriver() != null) {
             getDriver().quit();
             Log.setLog(browser.replace("grid_", "") + " instance closed.");
         }
-
         Log.testStep("INFO", "Browser instance closed", "Browser instance closed");
         Log.testStep("INFO",
                 "Test Execution of " + this.getClass().getSimpleName() + "::" + method.getName().toString()
@@ -380,5 +361,4 @@ public class Browser {
     public void afterSuite() {
         extent.flush();
     }
-
 }
