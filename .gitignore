@@ -3,3 +3,4 @@ test-output/
 .idea/
 .settings/
 *.log
+log4j-applications.log
