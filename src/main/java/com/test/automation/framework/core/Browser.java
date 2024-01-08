@@ -10,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -246,13 +247,18 @@ public class Browser {
     public static void openBrowser() throws Exception {
         getBrowser();
         if (browser.equalsIgnoreCase("chrome")) {
-            String driverType = null;
             if (OSChecker.isWindows()) {
-                driverType = "chromedriver.exe";
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/windows/" + driverType);
+//                driverType = "chromedriver.exe";
+//                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/windows/" + driverType);
+                WebDriverManager.chromedriver().setup();
+                Log.testStep("INFO", "Setting up ChromeDriver... Running in Windows OS",
+                        "Setting up ChromeDriver... Running in Windows OS");
             } else if (OSChecker.isMac()) {
-                driverType = "chromedriver_mac";
-                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/mac/" + driverType);
+//                driverType = "chromedriver_mac";
+//                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/mac/" + driverType);
+                WebDriverManager.chromedriver().setup();
+                Log.testStep("INFO", "Setting up ChromeDriver... Running in Mac OS",
+                        "Setting up ChromeDriver... Running in Mac OS");
             }
             HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
             chromePrefs.put("profile.default_content_settings.popups", 0);
