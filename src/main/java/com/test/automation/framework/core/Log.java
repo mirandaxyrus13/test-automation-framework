@@ -4,6 +4,8 @@ import org.apache.log4j.Logger;
 import org.testng.Reporter;
 import org.junit.Assert;
 
+
+
 import java.io.IOException;
 
 public class Log extends Browser{

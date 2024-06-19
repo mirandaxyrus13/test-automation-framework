@@ -169,3 +169,177 @@
 2023-05-01 13:53:27 - [Log:] chrome instance closed.
 2023-05-01 13:53:27 - [INFO] Browser instance closed
 2023-05-01 13:53:27 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 19:34:08 - [INFO] Setting the environment to test
+2024-01-08 19:34:10 - [INFO] Browser instance closed
+2024-01-08 19:34:10 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 19:35:36 - [INFO] Setting the environment to test
+2024-01-08 19:35:38 - [INFO] Browser instance closed
+2024-01-08 19:35:38 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 19:37:10 - [INFO] Setting the environment to test
+2024-01-08 19:37:12 - [PASSED] Browser Initialized
+2024-01-08 19:37:12 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 19:37:13 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 19:37:13 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 19:37:13 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 19:37:16 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 19:37:18 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 19:37:21 - [PASSED] Sign In Button is clicked
+2024-01-08 19:37:23 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 19:37:26 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 19:37:28 - [PASSED] Cart Button is clicked
+2024-01-08 19:37:33 - [Log:] chrome instance closed.
+2024-01-08 19:37:33 - [INFO] Browser instance closed
+2024-01-08 19:37:33 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 19:42:26 - [INFO] Setting the environment to test
+2024-01-08 19:42:28 - [PASSED] Browser Initialized
+2024-01-08 19:42:28 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 19:42:28 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 19:42:28 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 19:42:28 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 19:42:31 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 19:42:33 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 19:42:36 - [PASSED] Sign In Button is clicked
+2024-01-08 19:42:38 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 19:42:40 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 19:42:43 - [PASSED] Cart Button is clicked
+2024-01-08 19:42:48 - [Log:] chrome instance closed.
+2024-01-08 19:42:48 - [INFO] Browser instance closed
+2024-01-08 19:42:48 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 21:17:37 - [INFO] Setting the environment to test
+2024-01-08 21:17:42 - [PASSED] Browser Initialized
+2024-01-08 21:17:42 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 21:17:43 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 21:17:43 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 21:17:43 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 21:17:45 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 21:17:47 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 21:17:50 - [PASSED] Sign In Button is clicked
+2024-01-08 21:17:52 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 21:17:54 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 21:17:57 - [PASSED] Cart Button is clicked
+2024-01-08 21:18:02 - [Log:] chrome instance closed.
+2024-01-08 21:18:02 - [INFO] Browser instance closed
+2024-01-08 21:18:02 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 21:22:25 - [INFO] Setting the environment to test
+2024-01-08 21:22:26 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-01-08 21:22:28 - [PASSED] Browser Initialized
+2024-01-08 21:22:28 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 21:22:28 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 21:22:28 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 21:22:28 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 21:22:31 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 21:22:33 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 21:22:36 - [PASSED] Sign In Button is clicked
+2024-01-08 21:22:38 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 21:22:40 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 21:22:43 - [PASSED] Cart Button is clicked
+2024-01-08 21:22:48 - [Log:] chrome instance closed.
+2024-01-08 21:22:48 - [INFO] Browser instance closed
+2024-01-08 21:22:48 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 21:25:57 - [INFO] Setting the environment to test
+2024-01-08 21:25:57 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-01-08 21:25:59 - [PASSED] Browser Initialized
+2024-01-08 21:25:59 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 21:25:59 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 21:25:59 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 21:25:59 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 21:26:02 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 21:26:04 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 21:26:07 - [PASSED] Sign In Button is clicked
+2024-01-08 21:26:09 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 21:26:11 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 21:26:16 - [PASSED] Cart Button is clicked
+2024-01-08 21:26:21 - [Log:] chrome instance closed.
+2024-01-08 21:26:21 - [INFO] Browser instance closed
+2024-01-08 21:26:21 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-01-08 21:26:50 - [INFO] Setting the environment to test
+2024-01-08 21:26:51 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-01-08 21:26:52 - [PASSED] Browser Initialized
+2024-01-08 21:26:52 - [INFO] Accessing https://www.saucedemo.com/
+2024-01-08 21:26:53 - [Story Name] SwagLabs Sauce Demo
+2024-01-08 21:26:53 - [Test Script Name] Purchase Swag Labs products
+2024-01-08 21:26:53 - [Test Script Description] User is purchases Swag Labs products
+2024-01-08 21:26:55 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-01-08 21:26:58 - [PASSED] Password TextBox is populated with '******'
+2024-01-08 21:27:00 - [PASSED] Sign In Button is clicked
+2024-01-08 21:27:03 - [PASSED] Swag Labs Logo is displayed
+2024-01-08 21:27:05 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-01-08 21:27:07 - [PASSED] Cart Button is clicked
+2024-01-08 21:27:13 - [Log:] chrome instance closed.
+2024-01-08 21:27:13 - [INFO] Browser instance closed
+2024-01-08 21:27:13 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-03-08 16:10:23 - [INFO] Setting the API environment to test
+2024-03-08 16:10:23 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:12:32 - [INFO] Setting the API environment to test
+2024-03-08 16:12:32 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:13:26 - [INFO] Setting the API environment to test
+2024-03-08 16:13:26 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:15:37 - [INFO] Setting the API environment to test
+2024-03-08 16:15:37 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:17:05 - [INFO] Setting the API environment to test
+2024-03-08 16:17:05 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:17:57 - [Story Name] OpenWeather API
+2024-03-08 16:20:21 - [INFO] Setting the API environment to test
+2024-03-08 16:20:21 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:21:27 - [INFO] Setting the API environment to test
+2024-03-08 16:21:27 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:22:13 - [INFO] Setting the API environment to test
+2024-03-08 16:22:13 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:32:29 - [INFO] Setting the API environment to test
+2024-03-08 16:32:29 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:36:47 - [INFO] Setting the environment to test
+2024-03-08 16:36:47 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 16:38:10 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 19:11:38 - [INFO] Setting the environment to test
+2024-03-08 19:11:38 - [INFO] Setting the API environment to test
+2024-03-08 19:11:38 - [INFO] Setting the API Base URL to https://openweathermap.org
+2024-03-08 19:12:25 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 19:15:31 - [INFO] Setting the environment to test
+2024-03-08 19:15:31 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 19:15:58 - [INFO] Setting the environment to test
+2024-03-08 19:15:58 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 19:16:27 - [INFO] Setting the environment to test
+2024-03-08 19:16:28 - [INFO] Setting the API environment to test
+2024-03-08 19:16:28 - [INFO] Setting the API Base URL to https://openweathermap.org
+2024-03-08 19:17:01 - [INFO] Setting the environment to test
+2024-03-08 19:17:05 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-03-08 19:17:07 - [PASSED] Browser Initialized
+2024-03-08 19:17:07 - [INFO] Accessing https://www.saucedemo.com/
+2024-03-08 19:17:14 - [Story Name] SwagLabs Sauce Demo
+2024-03-08 19:17:14 - [Test Script Name] Purchase Swag Labs products
+2024-03-08 19:17:14 - [Test Script Description] User is purchases Swag Labs products
+2024-03-08 19:17:17 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-03-08 19:17:19 - [PASSED] Password TextBox is populated with '******'
+2024-03-08 19:17:21 - [PASSED] Sign In Button is clicked
+2024-03-08 19:17:24 - [PASSED] Swag Labs Logo is displayed
+2024-03-08 19:17:26 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-03-08 19:17:28 - [PASSED] Cart Button is clicked
+2024-03-08 19:17:34 - [Log:] chrome instance closed.
+2024-03-08 19:17:34 - [INFO] Browser instance closed
+2024-03-08 19:17:34 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-03-08 19:18:52 - [INFO] Setting the environment to test
+2024-03-08 19:18:53 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-03-08 19:18:54 - [PASSED] Browser Initialized
+2024-03-08 19:18:54 - [INFO] Accessing https://www.saucedemo.com/
+2024-03-08 19:18:55 - [Story Name] SwagLabs Sauce Demo
+2024-03-08 19:18:55 - [Test Script Name] Purchase Swag Labs products
+2024-03-08 19:18:55 - [Test Script Description] User is purchases Swag Labs products
+2024-03-08 19:18:58 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-03-08 19:19:00 - [PASSED] Password TextBox is populated with '******'
+2024-03-08 19:19:03 - [PASSED] Sign In Button is clicked
+2024-03-08 19:19:05 - [PASSED] Swag Labs Logo is displayed
+2024-03-08 19:19:07 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-03-08 19:19:10 - [PASSED] Cart Button is clicked
+2024-03-08 19:19:15 - [Log:] chrome instance closed.
+2024-03-08 19:19:15 - [INFO] Browser instance closed
+2024-03-08 19:19:15 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-03-08 19:24:40 - [INFO] Setting the environment to test
+2024-03-08 19:24:40 - [INFO] Test Execution of ContractTesting::TC0001 completed
+2024-03-08 19:26:24 - [Story Name] OpenWeather API
+2024-03-08 19:29:51 - [INFO] Setting the environment to test
+2024-03-08 19:34:29 - [INFO] Setting the environment to test
+2024-03-08 19:39:10 - [INFO] Setting the API environment to test
+2024-03-08 19:40:53 - [INFO] Setting the API environment to test
+2024-03-08 19:42:45 - [INFO] Setting the API environment to test
+2024-03-08 19:51:00 - [INFO] Setting the environment to test
+2024-03-08 20:07:13 - [INFO] NAAAH

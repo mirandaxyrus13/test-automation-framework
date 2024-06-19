@@ -26,7 +26,7 @@
     <thumbnailForBase64>false</thumbnailForBase64>
 
     <!-- title of the document -->
-    <documentTitle>Sauce Demo - Test Report</documentTitle>
+    <documentTitle>Test Report</documentTitle>
 
     <!-- report name - displayed at top-nav -->
     <reportName>Test Results</reportName>
