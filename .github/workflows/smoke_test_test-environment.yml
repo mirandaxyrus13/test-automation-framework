@@ -1,4 +1,4 @@
-name: test_execution_test-environment
+name: smoke_test_test-environment
 
 on:
   schedule:

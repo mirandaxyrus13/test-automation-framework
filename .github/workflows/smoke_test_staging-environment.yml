@@ -1,4 +1,4 @@
-name: test_execution_staging-environment
+name: smoke_test_staging-environment
 
 on:
   schedule:

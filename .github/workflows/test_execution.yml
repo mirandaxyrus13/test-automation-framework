@@ -7,6 +7,14 @@ on:
         description: 'An input-value has been passed from caller workflow'
         required: true
         type: string
+      environment:
+        description: 'An input-value has been passed from caller workflow'
+        required: true
+        type: string
+      browser:
+        description: 'An input-value has been passed from caller workflow'
+        required: true
+        type: string
 
 #    secrets:
 #      SOME_SECRET:
@@ -42,5 +50,5 @@ jobs:
       - name: GitHub Event Repo Name
         run: echo "${{ github.event.repository.name }}"
 
-      - name: Build with Maven and Regression Test of SauceDemo suite ${{inputs.input-value}} triggered by repository - ${{ github.event.repository.name }}
-        run: mvn clean test -DsuiteXmlFile="${{inputs.input-value}}" -Denvironment="test" -DbrowserInstance="chrome"
+      - name: Build with Maven and Smoke Test of SauceDemo suite ${{inputs.input-value}} triggered by repository - ${{ github.event.repository.name }}
+        run: mvn clean test -DsuiteXmlFile="${{inputs.input-value}}" -Denvironment="${{inputs.environment}}" -DbrowserInstance="${{inputs.browser}}"
