@@ -1,5 +1,6 @@
 package com.test.automation.framework.core;
 
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.testng.Reporter;
 import org.junit.Assert;
@@ -13,6 +14,10 @@ public class Log extends Browser{
         Reporter.log("[Log:] " + name);
         consoleLog.info("[Log:] " + name);
         test.info("[Log:] " + name);
+    }
+
+    public static void setLogToOff(String name){
+        consoleLog.getLogger(name).setLevel(Level.OFF);
     }
 
     public static void setScreenshot(String name) throws IOException {

@@ -169,3 +169,593 @@
 2023-05-01 13:53:27 - [Log:] chrome instance closed.
 2023-05-01 13:53:27 - [INFO] Browser instance closed
 2023-05-01 13:53:27 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 00:51:32 - [INFO] Setting the environment to staging
+2024-06-22 00:51:35 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 00:51:37 - [PASSED] Browser Initialized
+2024-06-22 00:51:38 - [Log:] chrome instance closed.
+2024-06-22 00:51:38 - [INFO] Browser instance closed
+2024-06-22 00:51:38 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 00:54:40 - [INFO] Setting the environment to staging
+2024-06-22 00:54:41 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 00:54:43 - [PASSED] Browser Initialized
+2024-06-22 00:54:44 - [Log:] chrome instance closed.
+2024-06-22 00:54:44 - [INFO] Browser instance closed
+2024-06-22 00:54:44 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 00:55:21 - [INFO] Setting the environment to staging
+2024-06-22 00:55:22 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 00:55:25 - [PASSED] Browser Initialized
+2024-06-22 00:55:25 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 00:55:25 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 00:55:25 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 00:55:25 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 00:55:28 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 00:55:30 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 00:55:32 - [PASSED] Sign In Button is clicked
+2024-06-22 00:55:35 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 00:55:37 - [PASSED] Sauce Labs Backpack Add to Cart Button is clicked
+2024-06-22 00:55:39 - [PASSED] Cart Button is clicked
+2024-06-22 00:55:46 - [Log:] chrome instance closed.
+2024-06-22 00:55:46 - [INFO] Browser instance closed
+2024-06-22 00:55:46 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 00:56:12 - [INFO] Setting the environment to test
+2024-06-22 00:56:13 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 00:56:15 - [PASSED] Browser Initialized
+2024-06-22 00:56:15 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 00:56:16 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 00:56:16 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 00:56:16 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 00:56:18 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 00:56:21 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 00:56:23 - [PASSED] Sign In Button is clicked
+2024-06-22 00:56:25 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 00:56:28 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 00:56:30 - [PASSED] Cart Button is clicked
+2024-06-22 00:56:36 - [Log:] chrome instance closed.
+2024-06-22 00:56:36 - [INFO] Browser instance closed
+2024-06-22 00:56:36 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 00:58:23 - [INFO] Setting the environment to test
+2024-06-22 00:58:27 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 00:58:31 - [PASSED] Browser Initialized
+2024-06-22 00:58:31 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 00:58:31 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 00:58:31 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 00:58:31 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 00:58:34 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 00:58:36 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 00:58:39 - [PASSED] Sign In Button is clicked
+2024-06-22 00:58:41 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 00:58:43 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 00:58:46 - [PASSED] Cart Button is clicked
+2024-06-22 00:58:52 - [Log:] firefox instance closed.
+2024-06-22 00:58:52 - [INFO] Browser instance closed
+2024-06-22 00:58:52 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:00:15 - [INFO] Setting the environment to test
+2024-06-22 01:00:16 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:00:25 - [INFO] Browser instance closed
+2024-06-22 01:00:25 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:01:20 - [INFO] Setting the environment to test
+2024-06-22 01:01:21 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:01:29 - [INFO] Browser instance closed
+2024-06-22 01:01:29 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:03:08 - [INFO] Setting the environment to test
+2024-06-22 01:03:09 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:03:12 - [PASSED] Browser Initialized
+2024-06-22 01:03:12 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:03:13 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:03:13 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:03:13 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:03:16 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:03:18 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:03:21 - [PASSED] Sign In Button is clicked
+2024-06-22 01:03:23 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:03:25 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:03:28 - [PASSED] Cart Button is clicked
+2024-06-22 01:03:34 - [Log:] firefox instance closed.
+2024-06-22 01:03:34 - [INFO] Browser instance closed
+2024-06-22 01:03:34 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:06:57 - [INFO] Setting the environment to test
+2024-06-22 01:06:57 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:07:01 - [PASSED] Browser Initialized
+2024-06-22 01:07:01 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:07:02 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:07:02 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:07:02 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:07:05 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:07:07 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:07:10 - [PASSED] Sign In Button is clicked
+2024-06-22 01:07:12 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:07:14 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:07:17 - [PASSED] Cart Button is clicked
+2024-06-22 01:07:23 - [Log:] firefox instance closed.
+2024-06-22 01:07:23 - [INFO] Browser instance closed
+2024-06-22 01:07:23 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:10:38 - [INFO] Setting the environment to test
+2024-06-22 01:10:39 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:10:39 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:10:39 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:10:43 - [PASSED] Browser Initialized
+2024-06-22 01:10:43 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:10:43 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:10:43 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:10:43 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:10:46 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:10:48 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:10:51 - [PASSED] Sign In Button is clicked
+2024-06-22 01:10:53 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:10:56 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:10:58 - [PASSED] Cart Button is clicked
+2024-06-22 01:11:04 - [Log:] firefox instance closed.
+2024-06-22 01:11:04 - [INFO] Browser instance closed
+2024-06-22 01:11:04 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:12:50 - [INFO] Setting the environment to test
+2024-06-22 01:12:50 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:12:51 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:12:51 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:12:53 - [PASSED] Browser Initialized
+2024-06-22 01:12:53 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:12:53 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:12:53 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:12:53 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:12:56 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:12:58 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:13:01 - [PASSED] Sign In Button is clicked
+2024-06-22 01:13:03 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:13:05 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:13:08 - [PASSED] Cart Button is clicked
+2024-06-22 01:13:14 - [Log:] firefox instance closed.
+2024-06-22 01:13:14 - [INFO] Browser instance closed
+2024-06-22 01:13:14 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:14:07 - [INFO] Setting the environment to test
+2024-06-22 01:14:08 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:14:08 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:14:08 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:14:10 - [PASSED] Browser Initialized
+2024-06-22 01:14:10 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:14:11 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:14:11 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:14:11 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:14:14 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:14:16 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:14:18 - [PASSED] Sign In Button is clicked
+2024-06-22 01:14:21 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:14:23 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:14:26 - [PASSED] Cart Button is clicked
+2024-06-22 01:14:32 - [Log:] firefox instance closed.
+2024-06-22 01:14:32 - [INFO] Browser instance closed
+2024-06-22 01:14:32 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:15:58 - [INFO] Setting the environment to test
+2024-06-22 01:15:59 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:15:59 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:15:59 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:16:01 - [PASSED] Browser Initialized
+2024-06-22 01:16:01 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:16:02 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:16:02 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:16:02 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:16:04 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:16:07 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:16:09 - [PASSED] Sign In Button is clicked
+2024-06-22 01:16:12 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:16:14 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:16:17 - [PASSED] Cart Button is clicked
+2024-06-22 01:16:22 - [Log:] firefox instance closed.
+2024-06-22 01:16:22 - [INFO] Browser instance closed
+2024-06-22 01:16:22 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:16:52 - [INFO] Setting the environment to test
+2024-06-22 01:16:52 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:16:52 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:16:52 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:16:54 - [PASSED] Browser Initialized
+2024-06-22 01:16:54 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:16:55 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:16:55 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:16:55 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:16:58 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:17:00 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:17:02 - [PASSED] Sign In Button is clicked
+2024-06-22 01:17:05 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:17:07 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:17:10 - [PASSED] Cart Button is clicked
+2024-06-22 01:17:16 - [Log:] firefox instance closed.
+2024-06-22 01:17:16 - [INFO] Browser instance closed
+2024-06-22 01:17:16 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:18:32 - [INFO] Setting the environment to test
+2024-06-22 01:18:33 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:18:33 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:18:33 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:18:35 - [PASSED] Browser Initialized
+2024-06-22 01:18:35 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:18:35 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:18:35 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:18:35 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:18:38 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:18:40 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:18:43 - [PASSED] Sign In Button is clicked
+2024-06-22 01:18:45 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:18:48 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:18:50 - [PASSED] Cart Button is clicked
+2024-06-22 01:18:56 - [Log:] firefox instance closed.
+2024-06-22 01:18:56 - [INFO] Browser instance closed
+2024-06-22 01:18:56 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:20:12 - [INFO] Setting the environment to test
+2024-06-22 01:20:13 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:20:13 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:20:13 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:20:15 - [PASSED] Browser Initialized
+2024-06-22 01:20:15 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:20:16 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:20:16 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:20:16 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:20:18 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:20:21 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:20:23 - [PASSED] Sign In Button is clicked
+2024-06-22 01:20:26 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:20:28 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:20:31 - [PASSED] Cart Button is clicked
+2024-06-22 01:20:36 - [Log:] firefox instance closed.
+2024-06-22 01:20:36 - [INFO] Browser instance closed
+2024-06-22 01:20:36 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:20:48 - [INFO] Setting the environment to test
+2024-06-22 01:20:48 - Using geckodriver 0.34.0 (resolved driver for Firefox 121)
+2024-06-22 01:20:49 - Exporting webdriver.gecko.driver as C:\Users\asus\.cache\selenium\geckodriver\win64\0.34.0\geckodriver.exe
+2024-06-22 01:20:49 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:20:52 - [PASSED] Browser Initialized
+2024-06-22 01:20:52 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:20:52 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:20:52 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:20:52 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:20:55 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:20:57 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:21:00 - [PASSED] Sign In Button is clicked
+2024-06-22 01:21:02 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:21:05 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:21:07 - [PASSED] Cart Button is clicked
+2024-06-22 01:21:13 - [Log:] firefox instance closed.
+2024-06-22 01:21:13 - [INFO] Browser instance closed
+2024-06-22 01:21:13 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:21:35 - [INFO] Setting the environment to test
+2024-06-22 01:21:36 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:21:36 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:21:36 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:21:38 - [PASSED] Browser Initialized
+2024-06-22 01:21:38 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:21:38 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:21:38 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:21:38 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:21:41 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:21:43 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:21:46 - [PASSED] Sign In Button is clicked
+2024-06-22 01:21:48 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:21:50 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:21:53 - [PASSED] Cart Button is clicked
+2024-06-22 01:21:59 - [Log:] chrome instance closed.
+2024-06-22 01:21:59 - [INFO] Browser instance closed
+2024-06-22 01:21:59 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:23:28 - [INFO] Setting the environment to test
+2024-06-22 01:23:28 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:23:28 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:23:28 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:23:31 - [PASSED] Browser Initialized
+2024-06-22 01:23:31 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:23:31 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:23:31 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:23:31 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:23:34 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:23:36 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:23:38 - [PASSED] Sign In Button is clicked
+2024-06-22 01:23:41 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:23:43 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:23:45 - [PASSED] Cart Button is clicked
+2024-06-22 01:23:51 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:23:52 - [Log:] chrome instance closed.
+2024-06-22 01:23:52 - [INFO] Browser instance closed
+2024-06-22 01:23:52 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:28:49 - [INFO] Setting the environment to test
+2024-06-22 01:28:50 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:28:50 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:28:50 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:28:50 - [INFO] Browser instance closed
+2024-06-22 01:28:50 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:29:24 - [INFO] Setting the environment to test
+2024-06-22 01:29:25 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:29:25 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:29:25 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:29:25 - [INFO] Browser instance closed
+2024-06-22 01:29:25 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:29:46 - [INFO] Setting the environment to test
+2024-06-22 01:29:47 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:29:47 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:29:47 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:29:47 - [INFO] Browser instance closed
+2024-06-22 01:29:47 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:30:20 - [INFO] Setting the environment to test
+2024-06-22 01:30:20 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:30:20 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:30:20 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:30:20 - [INFO] Browser instance closed
+2024-06-22 01:30:20 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:31:27 - [INFO] Setting the environment to test
+2024-06-22 01:31:28 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:31:28 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:31:28 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:31:28 - [INFO] Browser instance closed
+2024-06-22 01:31:28 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:32:38 - [INFO] Setting the environment to test
+2024-06-22 01:32:39 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:32:39 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:32:39 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:32:41 - [PASSED] Browser Initialized
+2024-06-22 01:32:41 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:32:42 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:32:42 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:32:42 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:32:45 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:32:47 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:32:49 - [PASSED] Sign In Button is clicked
+2024-06-22 01:32:52 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:32:54 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:32:56 - [PASSED] Cart Button is clicked
+2024-06-22 01:33:02 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:33:03 - [Log:] chrome instance closed.
+2024-06-22 01:33:03 - [INFO] Browser instance closed
+2024-06-22 01:33:03 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:34:24 - [INFO] Setting the environment to test
+2024-06-22 01:34:24 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:34:24 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:34:24 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:34:27 - [PASSED] Browser Initialized
+2024-06-22 01:34:27 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:34:27 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:34:27 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:34:27 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:34:30 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:34:32 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:34:34 - [PASSED] Sign In Button is clicked
+2024-06-22 01:34:37 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:34:39 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:34:41 - [PASSED] Cart Button is clicked
+2024-06-22 01:34:48 - [Log:] chrome instance closed.
+2024-06-22 01:34:48 - [INFO] Browser instance closed
+2024-06-22 01:34:48 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:36:34 - [INFO] Setting the environment to test
+2024-06-22 01:36:35 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:36:35 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:36:35 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:36:37 - [PASSED] Browser Initialized
+2024-06-22 01:36:37 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:36:38 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:36:38 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:36:38 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:36:40 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:36:43 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:36:45 - [PASSED] Sign In Button is clicked
+2024-06-22 01:36:47 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:36:50 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:36:52 - [PASSED] Cart Button is clicked
+2024-06-22 01:36:58 - [Log:] chrome instance closed.
+2024-06-22 01:36:58 - [INFO] Browser instance closed
+2024-06-22 01:36:58 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:38:22 - [INFO] Setting the environment to test
+2024-06-22 01:38:22 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:38:22 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:38:22 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:38:25 - [INFO] Browser instance closed
+2024-06-22 01:38:25 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:39:07 - [INFO] Setting the environment to test
+2024-06-22 01:39:08 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:39:08 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:39:08 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:39:10 - [PASSED] Browser Initialized
+2024-06-22 01:39:10 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:39:10 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:39:10 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:39:10 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:39:13 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:39:15 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:39:18 - [PASSED] Sign In Button is clicked
+2024-06-22 01:39:20 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:39:22 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:39:25 - [PASSED] Cart Button is clicked
+2024-06-22 01:39:30 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:39:31 - [Log:] chrome instance closed.
+2024-06-22 01:39:31 - [INFO] Browser instance closed
+2024-06-22 01:39:31 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:49:22 - [INFO] Setting the environment to test
+2024-06-22 01:49:23 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:49:23 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:49:23 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:49:25 - [PASSED] Browser Initialized
+2024-06-22 01:49:25 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:49:26 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:49:26 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:49:26 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:49:28 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:49:31 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:49:33 - [PASSED] Sign In Button is clicked
+2024-06-22 01:49:36 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:49:38 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:49:40 - [PASSED] Cart Button is clicked
+2024-06-22 01:49:45 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:49:46 - [Log:] chrome instance closed.
+2024-06-22 01:49:46 - [INFO] Browser instance closed
+2024-06-22 01:49:46 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:50:40 - [INFO] Setting the environment to test
+2024-06-22 01:50:41 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:50:41 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:50:41 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:50:43 - [PASSED] Browser Initialized
+2024-06-22 01:50:43 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:50:44 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:50:44 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:50:44 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:50:46 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:50:49 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:50:51 - [PASSED] Sign In Button is clicked
+2024-06-22 01:50:54 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:50:56 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:50:58 - [PASSED] Cart Button is clicked
+2024-06-22 01:51:03 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:51:04 - [Log:] chrome instance closed.
+2024-06-22 01:51:04 - [INFO] Browser instance closed
+2024-06-22 01:51:04 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:51:23 - [INFO] Setting the environment to test
+2024-06-22 01:51:24 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:51:24 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:51:24 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:51:26 - [PASSED] Browser Initialized
+2024-06-22 01:51:26 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:51:27 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:51:27 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:51:27 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:51:29 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:51:31 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:51:34 - [PASSED] Sign In Button is clicked
+2024-06-22 01:51:36 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:51:38 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:51:41 - [PASSED] Cart Button is clicked
+2024-06-22 01:51:46 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:51:47 - [Log:] chrome instance closed.
+2024-06-22 01:51:47 - [INFO] Browser instance closed
+2024-06-22 01:51:47 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:53:17 - [INFO] Setting the environment to test
+2024-06-22 01:53:19 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:53:19 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:53:19 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:53:21 - [PASSED] Browser Initialized
+2024-06-22 01:53:21 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:53:22 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:53:22 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:53:22 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:53:24 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:53:27 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:53:29 - [PASSED] Sign In Button is clicked
+2024-06-22 01:53:31 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:53:34 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:53:36 - [PASSED] Cart Button is clicked
+2024-06-22 01:53:41 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:256)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+2024-06-22 01:53:42 - [Log:] chrome instance closed.
+2024-06-22 01:53:42 - [INFO] Browser instance closed
+2024-06-22 01:53:42 - [INFO] Test Execution of SmokeTesting::TC0003 completed
+2024-06-22 01:54:44 - [INFO] Setting the environment to test
+2024-06-22 01:54:45 - Using chromedriver 126.0.6478.63 (resolved driver for Chrome 126)
+2024-06-22 01:54:45 - Exporting webdriver.chrome.driver as C:\Users\asus\.cache\selenium\chromedriver\win64\126.0.6478.63\chromedriver.exe
+2024-06-22 01:54:45 - [INFO] Setting up ChromeDriver... Running in Windows OS
+2024-06-22 01:54:47 - [PASSED] Browser Initialized
+2024-06-22 01:54:47 - [INFO] Accessing https://www.saucedemo.com/
+2024-06-22 01:54:48 - [Story Name] SwagLabs Sauce Demo
+2024-06-22 01:54:48 - [Test Script Name] Purchase Swag Labs products
+2024-06-22 01:54:48 - [Test Script Description] User is purchases Swag Labs products
+2024-06-22 01:54:50 - [PASSED] Username TextBox is populated with 'standard_user'
+2024-06-22 01:54:53 - [PASSED] Password TextBox is populated with '******'
+2024-06-22 01:54:55 - [PASSED] Sign In Button is clicked
+2024-06-22 01:54:57 - [PASSED] Swag Labs Logo is displayed
+2024-06-22 01:55:00 - [PASSED] Sauce Labs Bike Light Add to Cart Button is clicked
+2024-06-22 01:55:02 - [PASSED] Cart Button is clicked
+2024-06-22 01:55:08 - [Log:] chrome instance closed.
+2024-06-22 01:55:08 - [INFO] Browser instance closed
+2024-06-22 01:55:08 - [INFO] Test Execution of SmokeTesting::TC0003 completed

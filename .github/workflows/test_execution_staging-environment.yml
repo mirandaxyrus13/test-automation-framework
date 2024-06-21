@@ -1,4 +1,4 @@
-name: test_execution
+name: test_execution_staging-environment
 
 on:
   schedule:
@@ -44,4 +44,4 @@ jobs:
             ${{ runner.os }}-maven-
 
       - name: Build with Maven and Regression Test of Google Smoke Test suite
-        run: mvn clean test -DsuiteXmlFile="SmokeTesting.xml" -Denvironment="test" -DbrowserInstance="chrome"
+        run: mvn clean test -DsuiteXmlFile="SmokeTesting.xml" -Denvironment="staging" -DbrowserInstance="chrome"

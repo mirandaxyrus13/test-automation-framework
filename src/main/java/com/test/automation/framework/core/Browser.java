@@ -3,9 +3,12 @@ package com.test.automation.framework.core;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.google.common.collect.ImmutableMap;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -25,6 +28,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 public class Browser {
 
@@ -283,13 +287,59 @@ public class Browser {
             chromeOptions.addArguments("disable-gpu");
             // chromeOptions.addArguments("window-size=1280x1024");
             chromeOptions.setAcceptInsecureCerts(true);
+            chromeOptions.setCapability("goog:chromeOptions", ImmutableMap.of("w3c", true));
+            chromeOptions.setCapability("goog:chromeOptions", ImmutableMap.of("v126", true));
             chromeOptions.setCapability(CapabilityType.ACCEPT_INSECURE_CERTS, true);
             chromeOptions.setCapability(CapabilityType.SUPPORTS_JAVASCRIPT, true);
             chromeOptions.setCapability(ChromeOptions.CAPABILITY, chromeOptions);
             driver = new ChromeDriver(chromeOptions);
             Log.testStep("PASSED", "Browser Initialized", "Browser Initialized");
         } else if (browser.equalsIgnoreCase("firefox")) {
+            if (OSChecker.isWindows()) {
+                WebDriverManager.firefoxdriver().setup();
+                Log.testStep("INFO", "Setting up ChromeDriver... Running in Windows OS",
+                        "Setting up ChromeDriver... Running in Windows OS");
+            } else if (OSChecker.isMac()) {
+                WebDriverManager.firefoxdriver().setup();
+                Log.testStep("INFO", "Setting up FirefoxDriver/GeckoDriver... Running in Mac OS",
+                        "Setting up irefoxDriver/GeckoDriver... Running in Mac OS");
+            }
+            HashMap<String, Object> fireFoxMap = new HashMap<String, Object>();
+            fireFoxMap.put("profile.default_content_settings.popups", 0);
+            fireFoxMap.put("download.default_directory", downloadFilepath);
+            FirefoxOptions fireFoxOptions = new FirefoxOptions();
+            fireFoxOptions.addPreference("browser.download.folderList", 2);
+            fireFoxOptions.addPreference("browser.download.dir", downloadFilepath);
+            fireFoxOptions.addPreference("browser.fullscreen.autohide", false);
+            fireFoxOptions.addPreference("browser.fullscreen.animateUp", 0);
+//            fireFoxOptions.addArguments("-headless");  // Run Firefox in headless mode
+            fireFoxOptions.addPreference("extensions.enabled", false);
+            fireFoxOptions.addPreference("gfx.webrender.all", false);
 
+            // Disable LoginRecipes and other related features
+            fireFoxOptions.addPreference("signon.rememberSignons", false);
+            fireFoxOptions.addPreference("signon.autofillForms", false);
+            fireFoxOptions.addPreference("signon.autologin.proxy", false);
+            fireFoxOptions.addPreference("signon.formlessCapture.enabled", false); // Disable formless capture
+            fireFoxOptions.addPreference("signon.generation.enabled", false); // Disable password generation
+            fireFoxOptions.addPreference("signon.management.page.breach-alerts.enabled", false); // Disable breach alerts
+            fireFoxOptions.addPreference("signon.recipes.enabled", false); // Disable login recipes
+            fireFoxOptions.addPreference("signon.suggestImportCount", 0); // Disable import suggestion
+            fireFoxOptions.addPreference("signon.storeWhenAutocompleteOff", false); // Disable storing passwords when autocomplete is off
+            fireFoxOptions.addPreference("signon.debug", false); // Disable debug logs for signon
+            // Disable form fill features
+            fireFoxOptions.addPreference("browser.formfill.enable", false);
+            fireFoxOptions.addPreference("extensions.formautofill.addresses.enabled", false);
+            fireFoxOptions.addPreference("extensions.formautofill.creditCards.enabled", false);
+            // Disable other unnecessary features for a clean testing environment
+            fireFoxOptions.addPreference("dom.webnotifications.enabled", false); // Disable web notifications
+            fireFoxOptions.addPreference("media.volume_scale", "0.0"); // Mute audio
+            fireFoxOptions.addPreference("fission.webContentIsolationStrategy", 0);
+            fireFoxOptions.addPreference("fission.bfcacheInParent", false);
+            fireFoxOptions.setAcceptInsecureCerts(true);
+            fireFoxOptions.setCapability("moz:firefoxOptions", true);
+            driver = new FirefoxDriver(fireFoxOptions);
+            Log.testStep("PASSED", "Browser Initialized", "Browser Initialized");
         } else if (browser.equalsIgnoreCase("edge")) {
 
         }
@@ -302,6 +352,14 @@ public class Browser {
             Log.testStep("INFO", "Setting the environment to " + environment,
                     "Setting the environment to " + environment);
         } else if (environment.equals("test")) {
+            DataAccessLayer.setSheetName(environment);
+            Log.testStep("INFO", "Setting the environment to " + environment,
+                    "Setting the environment to " + environment);
+        } else if (environment.equals("staging")) {
+            DataAccessLayer.setSheetName(environment);
+            Log.testStep("INFO", "Setting the environment to " + environment,
+                    "Setting the environment to " + environment);
+        } else{
             DataAccessLayer.setSheetName(environment);
             Log.testStep("INFO", "Setting the environment to " + environment,
                     "Setting the environment to " + environment);
@@ -318,6 +376,9 @@ public class Browser {
             Log.testStep("INFO", "Accessing " + url, "Accessing " + url);
         } else if (environment.equals("test")) {
             url = properties.getProperty("test_url").toString();
+            Log.testStep("INFO", "Accessing " + url, "Accessing " + url);
+        } else if (environment.equals("staging")) {
+            url = properties.getProperty("staging_url").toString();
             Log.testStep("INFO", "Accessing " + url, "Accessing " + url);
         }
         getDriver().get(url);
@@ -339,6 +400,7 @@ public class Browser {
         setEnvironment();
         openBrowser();
         openApplication();
+        getDriver().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     }
 
     @AfterMethod(alwaysRun = true)
