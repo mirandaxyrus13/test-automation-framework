@@ -43,5 +43,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: Build with Maven and Regression Test of Google Smoke Test suite
-        run: mvn clean test -DsuiteXmlFile="SmokeTesting.xml" -Denvironment="test" -DbrowserInstance="chrome"
+      - name: Smoke Test for Sauce Labs Application in Test Environment
+        run: mvn clean test -DsuiteXmlFile="SmokeTesting.xml" -Denvironment="test" -DbrowserInstance="firefox"
