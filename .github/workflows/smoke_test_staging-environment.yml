@@ -1,21 +1,17 @@
-name: test_execution
+name: smoke_test_staging-environment
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
+  push:
+    branches: [ main ]
   workflow_call:
     inputs:
-      input-value:
+      input-value: 
         description: 'An input-value has been passed from caller workflow'
         required: true
         type: string
-      environment:
-        description: 'An input-value has been passed from caller workflow'
-        required: true
-        type: string
-      browser:
-        description: 'An input-value has been passed from caller workflow'
-        required: true
-        type: string
-
+        
 #    secrets:
 #      SOME_SECRET:
 #        required: true
@@ -47,8 +43,5 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-maven-
 
-      - name: GitHub Event Repo Name
-        run: echo "${{ github.event.repository.name }}"
-
-      - name: Build with Maven and Smoke Test of SauceDemo suite ${{inputs.input-value}} triggered by repository - ${{ github.event.repository.name }}
-        run: mvn clean test -DsuiteXmlFile="${{inputs.input-value}}" -Denvironment="${{inputs.environment}}" -DbrowserInstance="${{inputs.browser}}"
+      - name: Smoke Test for Sauce Labs Application in Staging Environment
+        run: mvn clean test -DsuiteXmlFile="SmokeTesting.xml" -Denvironment="staging" -DbrowserInstance="chrome"

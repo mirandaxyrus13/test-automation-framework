@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="com.test.automation.framework.saucedemo.ContractTesting"/>
+      <class name="com.test.automation.framework.openweather.ContractTesting"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

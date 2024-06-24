@@ -38,28 +38,30 @@ public class API {
     private static Properties properties;
     private static Response responseAPI;
     protected static ExtentTest test;
-    public static ExtentSparkReporter spark;
-    public static ExtentReports extent;
+//    public static ExtentSparkReporter spark;
+//    public static ExtentReports extent;
     private static String environment;
-    private static String extentSparkConfigPath = System.getProperty("user.dir").replace("\\", "/")
-            + "/src/main/resources/Config/spark-config.xml";
-    private static String extentSparkReportPath = System.getProperty("user.dir").replace("\\", "/")
-            + "/target/extent-reports/ContractTesting_" + DateUtilities.getCurrentDate() + "_" + DateUtilities.getTimeStamp()
-            + "_" + "ExtentSparkReports.html";
+//    private static String extentSparkConfigPath = System.getProperty("user.dir").replace("\\", "/")
+//            + "/src/main/resources/Config/spark-config.xml";
+//    private static String extentSparkReportPath = System.getProperty("user.dir").replace("\\", "/")
+//            + "/target/extent-reports/ContractTesting_" + DateUtilities.getCurrentDate() + "_" + DateUtilities.getTimeStamp()
+//            + "_" + "ExtentSparkReports.html";
 
     @BeforeSuite(alwaysRun = true)
     public void beforeSuite() {
-        extent = new ExtentReports();
-        spark = new ExtentSparkReporter(extentSparkReportPath);
-        final File CONF = new File(extentSparkConfigPath);
-        spark.loadXMLConfig(CONF);
-        extent.attachReporter(spark);
+//        extent = new ExtentReports();
+//        spark = new ExtentSparkReporter(extentSparkReportPath);
+//        final File CONF = new File(extentSparkConfigPath);
+//        spark.loadXMLConfig(CONF);
+//        extent.attachReporter(spark);
+        Log.declareExtentReportConfigurations();
     }
 
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod(Method method) throws Exception {
-        test = extent.createTest(this.getClass().getSimpleName() + "::" + method.getName().toString())
-                .assignCategory("Contract");
+        test = Log.getExtent().createTest(this.getClass().getSimpleName() + "::" + method.getName().toString())
+                .assignCategory("Automation Testing");
+        Log.setExtentTest(test);
         //TODO: ExtentTest test instance should be in Log.java
         setEnvironment();
         setAPIBaseURL(null);
@@ -68,12 +70,9 @@ public class API {
     @AfterMethod(alwaysRun = true)
     public void afterMethod(ITestResult result, Method method) throws Exception {
         if (ITestResult.FAILURE == result.getStatus()) {
-//            Screenshot.capture("Failed_" + result.getName() + "_");
-//            test.addScreenCaptureFromPath(Screenshot.getpath() + Screenshot.getname());
-            test.fail(result.getThrowable());
+            Log.getExtentTest().fail(result.getThrowable());
         } else if (ITestResult.SUCCESS == result.getStatus()) {
-//            Screenshot.capture("Passed_" + result.getName() + "_");
-//            test.addScreenCaptureFromPath(Screenshot.getpath() + Screenshot.getname());
+
         }
 
         Log.testStep("INFO",
@@ -85,7 +84,7 @@ public class API {
 
     @AfterSuite(alwaysRun = true)
     public void afterSuite() {
-        extent.flush();
+        Log.getExtent().flush();
     }
 
     public static void setAPIBaseURL(String url) throws Exception{
@@ -157,6 +156,7 @@ public class API {
         properties = new Properties();
         properties.load(fileInputStream);
         method = properties.getProperty(methodValue).toString();
+        System.out.println("METHOD is " + method);
 
         if(method.equalsIgnoreCase("GET")){
             if(parameters.isEmpty()){
@@ -356,12 +356,17 @@ public class API {
 //            DataAccessLayer.setSheetName(environment);
 //            Log.testStep("INFO", "Setting the environment to " + environment,
 //                    "Setting the environment to " + environment);
-            Log.test.info("Setting the environment to " + environment);
+            Log.getExtentTest().info("Setting the environment to " + environment);
         } else if (environment.equals("test")) {
 //            DataAccessLayer.setSheetName(environment);
 //            Log.testStep("INFO", "Setting the environment to " + environment,
 //                    "Setting the environment to " + environment);
-            Log.test.info("Setting the environment to " + environment);
+            Log.getExtentTest().info("Setting the environment to " + environment);
+        } else if (environment.equals("staging")) {
+//            DataAccessLayer.setSheetName(environment);
+//            Log.testStep("INFO", "Setting the environment to " + environment,
+//                    "Setting the environment to " + environment);
+            Log.getExtentTest().info("Setting the environment to " + environment);
         }
     }
 

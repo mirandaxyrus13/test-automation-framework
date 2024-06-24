@@ -1,20 +1,60 @@
 package com.test.automation.framework.core;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.testng.Reporter;
 import org.junit.Assert;
 
 
-
+import java.io.File;
 import java.io.IOException;
 
 public class Log extends Browser{
+
+
+    private static String extentSparkConfigPath = System.getProperty("user.dir").replace("\\", "/")
+            + "/src/main/resources/Config/spark-config.xml";
+    private static String extentSparkReportPath = System.getProperty("user.dir").replace("\\", "/")
+            + "/target/extent-reports/ContractTesting_" + DateUtilities.getCurrentDate() + "_" + DateUtilities.getTimeStamp()
+            + "_" + "ExtentSparkReports.html";
+
+    private static ExtentSparkReporter spark;
+    private static ExtentReports extent;
+
+    private static ExtentTest test;
     private static Logger consoleLog = Logger.getLogger(Log.class.getName());
 
     public static void setLog(String name) {
         Reporter.log("[Log:] " + name);
         consoleLog.info("[Log:] " + name);
         test.info("[Log:] " + name);
+    }
+
+    public static void declareExtentReportConfigurations(){
+        extent = new ExtentReports();
+        spark = new ExtentSparkReporter(extentSparkReportPath);
+        final File CONF = new File(extentSparkConfigPath);
+        spark.loadXMLConfig(CONF);
+        extent.attachReporter(spark);
+    }
+
+    public static ExtentReports getExtent(){
+        return extent;
+    }
+
+    public static ExtentTest getExtentTest(){
+        return test;
+    }
+
+    public static void setExtentTest(ExtentTest configTest){
+        test = configTest;
+    }
+
+    public static void setLogToOff(String name){
+        consoleLog.getLogger(name).setLevel(Level.OFF);
     }
 
     public static void setScreenshot(String name) throws IOException {
