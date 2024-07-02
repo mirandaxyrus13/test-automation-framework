@@ -247,19 +247,14 @@ public class Browser {
         Log.testStep("PASSED", "Navigate Forward", "Navigate Forward");
     }
 
-    @SuppressWarnings("deprecation")
     public static void openBrowser() throws Exception {
         getBrowser();
         if (browser.equalsIgnoreCase("chrome")) {
             if (OSChecker.isWindows()) {
-//                driverType = "chromedriver.exe";
-//                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/windows/" + driverType);
                 WebDriverManager.chromedriver().setup();
                 Log.testStep("INFO", "Setting up ChromeDriver... Running in Windows OS",
                         "Setting up ChromeDriver... Running in Windows OS");
             } else if (OSChecker.isMac()) {
-//                driverType = "chromedriver_mac";
-//                System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver/mac/" + driverType);
                 WebDriverManager.chromedriver().setup();
                 Log.testStep("INFO", "Setting up ChromeDriver... Running in Mac OS",
                         "Setting up ChromeDriver... Running in Mac OS");
@@ -341,7 +336,10 @@ public class Browser {
             driver = new FirefoxDriver(fireFoxOptions);
             Log.testStep("PASSED", "Browser Initialized", "Browser Initialized");
         } else if (browser.equalsIgnoreCase("edge")) {
-
+            //TODO
+        } else{
+            Log.testStep("INFO", "Browser Instance is null",
+                    "Browser Instance is null");
         }
     }
 
