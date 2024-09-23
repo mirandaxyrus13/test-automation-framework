@@ -1,6 +1,6 @@
 # test-automation-framework
 
-This was created using Java programming languages. The test automation API/library used for this 
+This was created using Java programming language. The test automation API/library used for this 
 is Selenium WebDriver-Java. The Automation framework tool used is mainly TestNG, but JUnit was also used for assertions. The Project Management Tool used for downloading, updating and importing depedencies/libraries is Maven.
 
 
@@ -18,7 +18,7 @@ Frameworks applied are:
 - Data Driven Testing Framework
 
 ### Design Pattern
-For the Hybrid Testing Framework, Page Objects Model pattern is used.
+For the Hybrid Testing Framework, Page Object Model pattern is used.
 
 Page Object Model also known as POM is the most popular structural design pattern in web/mobile automation.
 
